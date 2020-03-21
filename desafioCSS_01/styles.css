@@ -1,0 +1,65 @@
+article#art1 {
+	margin: auto;
+	width: 950px;
+}
+
+h1 {
+	font-size: 4em;
+	font-family: 'Josefin Sans', sans-serif;
+	line-height: thin;
+	margin-top: 80px;
+	margin-bottom: 25px;
+	color: #464646;
+}
+
+span {
+	font-size: 1.3em;
+	font-family: 'Times New Roman', Times, serif;
+	color: #969696;
+}
+
+p   {
+	margin-top: 2em;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 1.6em;
+	line-height: 1.8em;
+	color: #464646;
+	margin-bottom: 1em;
+}
+
+
+button#butt1 {
+	background-color: rgb(185, 21, 62);
+	border: 1px solid #b9153e;
+	border-radius: 1px;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	width: 200px;
+}
+
+button#butt2 {
+	background-color: none;
+	border: 1px solid #b9153e;
+	border-radius: 1px;
+	color: rgb(185, 21, 62);;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	width: 200px
+}
+
+#icon1 {
+	width: 12px;
+	height: auto;
+	padding: 5px;
+	/* background-color: mediumspringgreen; */
+	padding-bottom: 0;
+	padding-top: 0;
+	padding-left: 0;
+}
