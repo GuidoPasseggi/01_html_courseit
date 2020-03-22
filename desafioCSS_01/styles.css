@@ -25,7 +25,7 @@ p   {
 	font-size: 1.6em;
 	line-height: 1.8em;
 	color: #464646;
-	margin-bottom: 1em;
+	margin-bottom: 1.6em;
 }
 
 
@@ -40,6 +40,7 @@ button#butt1 {
 	display: inline-block;
 	font-size: 16px;
 	width: 200px;
+	margin-right: 0.9em;
 }
 
 button#butt2 {
