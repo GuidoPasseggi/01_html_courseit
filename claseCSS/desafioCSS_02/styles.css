@@ -1,0 +1,127 @@
+/* @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+body {
+    background-color: #ffffff;
+    width: 650px;
+    margin: auto;
+}
+
+article {
+    margin-top: 35px;
+}
+
+.article-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.7em;
+    color: #bdbdbd;
+    font-weight: 500;
+}
+
+hr{ 
+    height: 1px;
+    color: #bdbdbd;
+    background-color: #bdbdbd;
+    border: none;
+  }
+
+.article-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.7em;
+    color: #bdbdbd;
+}
+
+.article-title {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.4;
+    margin-bottom: 0;
+
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin-top: 12px;
+}
+
+.author {
+    font-family: 'Roboto', sans-serif;
+    color: #bdbdbd; 
+    font-size: 0.7em;
+}
+
+
+.author-link a, .paragraph-link a {
+    text-decoration: none; 
+    color: #4d85d0;
+}
+
+
+
+.author-link a:hover, .paragraph-link a:hover {
+    /* background: red; */
+    text-decoration: underline;
+}
+
+.author-link a:active, .paragraph-link a:active {
+    background: rgb(130, 216, 238);
+}
+
+.link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.button-CSS {
+	background-color: #58b958;
+	border: 2px solid #58b958;
+	/* border-radius: 5px; */
+	color: #ffffff;
+	/* padding: 15px 32px; */
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 0.5em;
+    width: 3em;
+    font-family: 'Roboto', sans-serif;
+    /* letter-spacing: 0.1em; */
+    /* margin-right: 1em; */
+}
+
+.button-Pure {
+	background-color: #4d85d0;
+	border: 2px solid #4d85d0;
+	/* border-radius: 5px; */
+	color: #ffffff;
+	/* padding: 15px 32px; */
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 0.5em;
+    width: 3em;
+    font-family: 'Roboto', sans-serif;
+    /* letter-spacing: 0.1em; */
+    /* margin-right: 1em; */
+}
+
+p {
+    margin-bottom: 3em;
+}
+
+.button-Javascript {
+    background-color: #df2d4d;
+	border: 2px solid #df2d4d;
+	/* border-radius: 5px; */
+	color: #ffffff;
+	/* padding: 15px 32px; */
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 0.5em;
+    width: 7em;
+    font-family: 'Roboto', sans-serif;
+    /* letter-spacing: 0.1em; */
+    /* margin-right: 1em; */
+}
