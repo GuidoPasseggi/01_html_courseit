@@ -1,0 +1,36 @@
+.wrapper {
+    position: relative;
+  }
+  
+  .articles-wrapper {
+    background-color: #ddd;
+    display: flex;
+    align-items: stretch;
+  }
+  
+  .article {
+    padding: 1em;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 200px;
+  }
+  
+  .article.art1 {
+    background-color: #FF9AA2;
+  }
+  
+  .article.art2 {
+    background-color: #FFB7B2;
+  }
+  
+  .article.art3 {
+    background-color: #FFDAC1;
+  }
+  
+  .article.art4 {
+    background-color: #E2F0CB;
+  }
+  
+  .article.art5 {
+    background-color: #C7CEEA;
+  }
