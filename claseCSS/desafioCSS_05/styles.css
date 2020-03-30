@@ -61,7 +61,7 @@ body {
   color: #ffffff;
 }
 
-img {
+.img-right {
   width: 279px;
   height: 500px;
   object-fit: cover;
