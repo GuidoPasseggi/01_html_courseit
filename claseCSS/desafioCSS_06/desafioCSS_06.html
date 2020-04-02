@@ -1,0 +1,99 @@
+<html>
+
+<head>
+  <title>DesafioCSS_06</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+  <main class="main">
+
+    <div class="panel-left-top">
+      <header class="logo"><img src="https://i.ibb.co/16tqBJs/housy-logo.png" alt="logo" class="logo-img"></header>
+      <h2 class="welcome">Welcome back, Please login to your account.</h2>
+      <button class="facebook"></button>
+      <button class="xing"></button>
+      <span class="or"></span>
+      <label>Email Address<input type="email" name="email" value="mail"></label>
+      <label>Password<input type="password" name="password" value="pass"></label>
+    </div>
+
+    <div class="panel-left-bottom">
+      <div class="buttons_top">
+        <label><input type="checkbox" name="remember_login" value="remember">Remember me</label>
+        <label><input type="checkbox" name="forgot_pass" value="forgot_pass">Remember me</label>
+      </div>
+
+      <div class="buttons-bottom">
+        <button class="login">Login</button>
+        <button class="signup">Forgot Password</button>
+      </div>
+
+      <p class="agree">By signing up, you agree to Housy's <a href="#" class="terms">Terms and conditions</a> & <a href="#" class="privacy"></a> Privacy Policy</p>      
+    
+    </div>
+
+
+
+
+    <div class="panel-right">
+      <img src="https://i.ibb.co/1q5hPd9/mountain.jpg" alt="right-panel">
+    </div>
+
+  </main>
+</body>
+
+
+<!-- https://i.ibb.co/1q5hPd9/mountain.jpg -->
+<!-- https://i.ibb.co/16tqBJs/housy-logo.png -->
+<!-- https://svgshare.com/i/JbV.svg  COFFEE MUG PINK #CD5EB6-->
+
+
+<!-- 
+div wrapper con todo con codigo
+max width 100vw
+min height 100vh  <-- intentemos que siempre lo que es altura, dependa del contenido
+
+luego div con todo tamb
+
+background linear gradient
+
+al login:
+max-width 800px
+overflow: hidden <-- define como se comporta un elemento cuando sus hijos son mas grande que él. 
+overflow-y u overflow-x si queremos que elegir el eje en el que trabaja
+
+tanto el elemnto de la izquierda (formulario) como el de la derecha (div de imagen)
+tienen flow-grow: 1
+y el de la izquierda (formulario) tiene el tamaño limitado
+
+la imagen de la derecha
+meterla en un div
+y manipularla/agregarla en CSS como background-image con url
+y darle propiedad "cover"
+la propiedad object-fit trabaja directamente con el tamaño de la imagen
+
+input: 
+cuando se pone por defecto, tiene border en los cuatro lados
+poner border: 0 para resetear todos los borders,
+y luego border-bottom: 2px solid red;
+extra dato pal input:
+width: 100%
+max-width: 400px
+
+
+box-sizing: border-box;
+para que el padding y el borde empuje el contenido del div hacia adentro
+y evite sumarle padding hacia afuera agrandando el div
+
+
+***********************     TAREA     ***********************
+Hacerlo responsive utilizando media queries,
+para que cuando llegue a determinados PX, la imagen de la derecha no se visualice
+
+
+
+
+
+
+-->

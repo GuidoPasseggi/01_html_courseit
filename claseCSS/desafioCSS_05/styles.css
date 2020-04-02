@@ -13,6 +13,7 @@ body {
   border-radius: 25px;
   font-family: 'Roboto', sans-serif;
   color: #767676;
+  overflow: hidden;
 }
 
 .article-left {
@@ -20,8 +21,6 @@ body {
   width: 20em;
   height: auto;
   font-weight: 400;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
   padding: 2em;
 }
 
@@ -61,7 +60,17 @@ body {
   color: #ffffff;
 }
 
-.img-right {
+
+.article-right {
+  background-image: url("https://i.ibb.co/yfgjV2n/macbook.jpg");
+  object-fit: cover;
+  background-size: cover;
+  width: 16.9em;
+  height: auto;
+  /* vertical-align: top; */
+}
+
+/* .img-right {
   width: 279px;
   height: 500px;
   object-fit: cover;
@@ -69,7 +78,7 @@ body {
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   
-}
+} */
 
 
 /* ----- modo villero para croppear la imagen, EVITAR porque el "clip" solo funciona con "position absolute ------
@@ -79,5 +88,3 @@ img {
   height: auto;
   clip: rect(0, 200px, 800px, 0);
 } */
-
-

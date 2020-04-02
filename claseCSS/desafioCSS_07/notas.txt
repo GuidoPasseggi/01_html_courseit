@@ -1,0 +1,36 @@
+main.main
+
+header.header "VISION"
+
+div.article-welcome
+--h1.welcome-h1 "WELCOME TUCU"
+--p.welcome-paragraph "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do elusmod tempor incididunt ut labore."
+--button.access "ACCESS ACCOUNT"
+
+div.article-account
+--h2.account-h2 "YOUR ACCOUNT IS NOW ACTIVE"
+--p.account-paragraph-top "Lorem!!"
+--p.account-paragraph-middle"Lorem!!"
+--p.account-paragraph-bottom "Yours sincerely,"
+--div.account-sign con otros 2 divs
+----div.sign-img
+------img.avatar
+----div.sign-name-top "Anna Bella"
+----div.sign-name-top "CEO | Vision"
+
+div.article-feedback
+--h3.feedback-h3 "YOUR FEED BACK IS IMPORTANT"
+--p.feedback-paragraph "Let us know what you think of our latest updates"
+--button.feedback-button "GIVE FEEDBACK"
+
+div.article-social
+--button.social-facebook
+--button.social-twitter
+--button.social-instagram
+--button.social-linkedin
+
+div.article-data
+--span.address
+--span.email "This email was sent to you from *EMAIL*
+--span.preferences "Sarasa"
+--span.copyright "Copyright"
