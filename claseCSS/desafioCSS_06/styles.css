@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(223, 197, 247);
+}
+
+.div-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 46em;
+  background: pink;
+  font-family: 'Nunito', sans-serif; 
+}
+
+/* Aca empieza el lado IZQUIERDO */
+
+.panel-left {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  /* width: 16.9em; */
+  min-height: 600px;
+  /* vertical-align: top; */
+}
+
+.panel-left-top {
+
+}
+
+.div-housy {
+
+}
+
+.a-logo {
+
+}
+
+.a-housy:link,.a-housy:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.a-housy:hover {
+  text-decoration: underline;
+  color: #CD5EB6;
+}
+
+.a-housy:active {
+  background: grey;
+  color: blue;
+}
+
+.logo-img {
+  width: 25px;
+}
+
+.welcome {
+
+}
+
+.div-social {
+
+}
+
+.a-facebook {
+  background-color: chartreuse;
+  display: inline-block;
+  padding: 0.4em 1.4em;
+  text-align: center;
+  border: 0;
+  border-radius: 5%;
+}
+
+.facebook-text {
+  background-color: chocolate;
+  font-size: 1em;
+  color: #ffffff;
+  margin-left: 10px;
+  
+}
+
+.a-facebook:link,.a-facebook:visited,.a-facebook:hover,.a-facebook:active {
+  text-decoration: none;
+  color:black;
+}
+
+.facebook-img {
+  width: 0.8em;
+  height: auto;
+  margin: auto;
+  vertical-align: middle; 
+  display: inline-block;
+  background-color: crimson;
+  /* margin: 0;
+  padding: 0; */
+}
+
+.a-xing:link,.a-xing:visited,.a-xing:hover,.a-xing:active {
+  text-decoration: none;
+  color:black;
+}
+
+.xing-img {
+  width: 1em;
+  height: auto;
+}
+
+/* Aca empieza el lado DERECHO */
+
+.panel-right {
+  background-image: url("https://i.ibb.co/1q5hPd9/mountain.jpg");
+  object-fit: cover;
+  background-size: cover;
+  width: 50%;
+  /* width: 16.9em; */
+  height: 600px;
+  /* vertical-align: top; */
+}

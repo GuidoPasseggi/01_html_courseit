@@ -2,42 +2,60 @@
 
 <head>
   <title>DesafioCSS_06</title>
+  <!-- <link rel="stylesheet" type="text/css" href="reset.css" /> -->
   <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 
 <body>
   <main class="main">
 
-    <div class="panel-left-top">
-      <header class="logo"><img src="https://i.ibb.co/16tqBJs/housy-logo.png" alt="logo" class="logo-img"></header>
-      <h2 class="welcome">Welcome back, Please login to your account.</h2>
-      <button class="facebook"></button>
-      <button class="xing"></button>
-      <span class="or"></span>
-      <label>Email Address<input type="email" name="email" value="mail"></label>
-      <label>Password<input type="password" name="password" value="pass"></label>
-    </div>
+    <div class="div-wrapper">
+      <div class="panel-left">
+        <div class="panel-left-top">
+          <div class="div-Housy">
+            <a class="a-logo" href="#"><img src="https://i.ibb.co/55yzyHh/coffee-pink-CD5-EB6.png" alt="logo"
+                class="logo-img"></a>
+            <a href="#" class="a-housy">Housy</a>
+          </div>
+          <h2 class="welcome">Welcome back, Please login to your account.</h2>
+          <div class="div-social">
 
-    <div class="panel-left-bottom">
-      <div class="buttons_top">
-        <label><input type="checkbox" name="remember_login" value="remember">Remember me</label>
-        <label><input type="checkbox" name="forgot_pass" value="forgot_pass">Remember me</label>
+            <a href="www.facebook.com" class="a-facebook">
+              <!-- <img src="https://i.ibb.co/2c17vWB/facebook-white.png" alt="facebook-logo" class="facebook-img"> -->
+              Facebook</a>
+
+            <a href="wwww.xing.com" class="a-xing">
+              <!-- <img src="https://i.ibb.co/2s2fv1P/Xing-white.png" alt="xing-logo" class="xing-img"> -->
+              Xing</a>
+          </div>
+
+          <label>Email Address<input type="email" name="email" value="mail"></label>
+          <label>Password<input type="password" name="password" value="pass"></label>
+        </div>
+
+        <div class="panel-left-bottom">
+          <div class="buttons_top">
+            <label><input type="checkbox" name="remember_login" value="remember">Remember me</label>
+            <label><input type="checkbox" name="forgot_pass" value="forgot_pass">Remember me</label>
+          </div>
+
+          <div class="buttons-bottom">
+            <button class="login">Login</button>
+            <button class="signup">Forgot Password</button>
+          </div>
+
+          <p class="agree">By signing up, you agree to Housy's <a href="#" class="terms">Terms and conditions</a> & <a
+              href="#" class="privacy"></a> Privacy Policy</p>
+
+        </div>
       </div>
 
-      <div class="buttons-bottom">
-        <button class="login">Login</button>
-        <button class="signup">Forgot Password</button>
+
+
+
+      <div class="panel-right">
       </div>
 
-      <p class="agree">By signing up, you agree to Housy's <a href="#" class="terms">Terms and conditions</a> & <a href="#" class="privacy"></a> Privacy Policy</p>      
-    
-    </div>
-
-
-
-
-    <div class="panel-right">
-      <img src="https://i.ibb.co/1q5hPd9/mountain.jpg" alt="right-panel">
     </div>
 
   </main>

@@ -1,3 +1,14 @@
+/* 
+
+EVITAR DE ESTE EJEMPLO: zoom: 2; <-- no usar!! incompatible
+
+*/
+
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600;700&display=swap');
+font-family: 'Raleway', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
 body {
   margin: 0;
 }
@@ -6,7 +17,10 @@ body {
   display: flex;
   justify-content: center;
   background: #f1f1f1;
-  height: 100vh;
+  min-height: 100vh;
+  zoom: 2;
+  /* evitar usar la opcion ZOOM porque no es compatible con la mayoria de los
+  navegadores, pero a fines practicos en este ejercicio sirve */
 }
 
 .div-wrapper {
@@ -16,7 +30,7 @@ body {
   flex-basis: 480px;
   width: 35vw;
   height: auto;
-  font-family: sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 .header {
