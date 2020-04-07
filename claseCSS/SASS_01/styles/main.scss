@@ -1,0 +1,20 @@
+//con estos IMPORT estamos importando los archivos _reset.scss (etc)
+//que esta dentro de la carpeta "modules", para que pueda compilar al .CSS
+//los parametros que esten dentro de esos 3 archivos .SCSS
+// notar que no hace falta poner todo el nombre del archivo, porque SASS lo comprende asi nomas
+@import "modules/reset";
+@import "modules/blog-post";
+@import "modules/header";
+
+
+
+body {
+  background-color: #c5b8b8;
+  color: red;
+}
+
+
+
+
+
+
