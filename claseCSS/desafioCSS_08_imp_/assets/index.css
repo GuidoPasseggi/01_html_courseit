@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+body {
+  margin: 0;
+}
+
+.main {
+  font-family: "Nunito", sans-serif;
+  font-size: small;
+  width: auto;
+}
+.main .header {
+  background-color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 0.8rem 0.5rem 0.8rem 0.5rem;
+}
+.main .wrapper {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 2rem;
+  background-color: #e9e9e9;
+}
+.main .wrapper .left-wrapper {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+}
+.main .wrapper .left-wrapper .filtros-title {
+  padding: 0.5rem;
+}
+.main .wrapper .left-wrapper .filtros-div {
+  display: flex;
+  min-width: 10rem;
+  min-height: 2rem;
+  background-color: #ffffff;
+  margin: 0 2rem 0.5rem 1rem;
+  align-items: center;
+  border-radius: 25px;
+}
+.main .wrapper .left-wrapper .filtros-div .filtros {
+  justify-content: flex-start;
+  flex-grow: 1;
+  padding: 0.5rem;
+}
+.main .wrapper .left-wrapper .filtros-div .fa-times {
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+.main .wrapper .right-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.main .wrapper .right-wrapper .right-title {
+  font-weight: 600;
+  padding: 0.5rem;
+}
+.main .wrapper .right-wrapper .grid-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main .wrapper .right-wrapper .grid-container .item-div {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  flex-grow: 1;
+  margin: 5px;
+  width: calc(100% /3 - 10px);
+  max-width: calc(100% /2 - 10px);
+}
+.main .wrapper .right-wrapper .grid-container .item-div .item-photo {
+  display: flex;
+  justify-content: center;
+  background-image: url(https://i.ibb.co/7trCHhh/macbook-1.jpg);
+  background-size: cover;
+  background-position: center;
+  min-width: 230px;
+  min-height: 230px;
+}
+.main .wrapper .right-wrapper .grid-container .item-div .item-model {
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  font-weight: bold;
+}
+.main .wrapper .right-wrapper .grid-container .item-div .item-price {
+  padding: 0 0.5rem 0.5rem 1rem;
+}
+.main .footer {
+  display: flex;
+  flex-direction: column;
+  color: #7A7A7A;
+}
+.main .footer .lorem {
+  padding: 2rem 0.5rem 0.5rem 1rem;
+  font-size: 0.8rem;
+}
+.main .footer .about {
+  color: #585858;
+  padding: 0 0.5rem 0.5rem 1rem;
+  font-weight: 600;
+}
+.main .footer .social {
+  display: flex;
+  flex-direction: row;
+}
+.main .footer .social .social-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e9e9e9;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  margin: 0.5rem 0.5rem 1rem 1rem;
+}
+.main .footer .social .social-div i.fa {
+  color: #585858;
+}
+
+/*# sourceMappingURL=index.css.map */
