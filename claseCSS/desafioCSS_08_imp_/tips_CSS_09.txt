@@ -1,0 +1,12 @@
+DESAFIO CSS 9
+
+margin: 0 auto;
+block tamb darle (no inline-bock, ese no)
+PARA CENTRAR EL INPUT/SUBMIT de abajo (darle max width tamb)
+
+place-holder o algo asi para el "Type email"
+
+a los links de about y eso, darle como #href el propio div de about mas arriba del contenido
+y al .html darle:
+scroll-behavior: smooth;
+o algo asi

@@ -52,7 +52,7 @@ body {
 }
 .main .wrapper .right-wrapper .right-title {
   font-weight: 600;
-  padding: 0.5rem;
+  padding: 5px;
 }
 .main .wrapper .right-wrapper .grid-container {
   display: flex;
@@ -64,8 +64,8 @@ body {
   background-color: #ffffff;
   flex-grow: 1;
   margin: 5px;
-  width: calc(100% /3 - 10px);
-  max-width: calc(100% /2 - 10px);
+  width: calc(100% / 3 - 10px);
+  max-width: calc(100% / 2 - 10px);
 }
 .main .wrapper .right-wrapper .grid-container .item-div .item-photo {
   display: flex;
@@ -86,7 +86,7 @@ body {
 .main .footer {
   display: flex;
   flex-direction: column;
-  color: #7A7A7A;
+  color: #7a7a7a;
 }
 .main .footer .lorem {
   padding: 2rem 0.5rem 0.5rem 1rem;
