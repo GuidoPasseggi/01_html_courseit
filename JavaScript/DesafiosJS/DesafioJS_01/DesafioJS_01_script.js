@@ -103,6 +103,9 @@
 // En tal caso, se dice que los números mayores que 0 son estrictamente positivos.
 
 
+//V1 (Guido)
+//
+
 // x = 0;
 
 // if (x > 0) { console.log("El número es positivo") }
@@ -111,6 +114,35 @@
 // else {
 // console.log("No ingresó un número válido")
 // }
+
+
+//V2 (Clase)
+//-- chequearon primero si es un numero o no,
+//-- con una funcion typeOf]
+//--[tambien se puede hacer con isNaN()
+
+// NaN  = "Not a Number"
+// !isNaN() <--- el ! invierte la funcion
+
+// google:
+// isNaN() – Stands for “is Not a Number”, if variable is not a number, it return true, else return false.
+// typeof – If variable is a number, it will returns a string named “number”.
+
+x = "Soy texto";
+
+if (typeof x == "number") {
+  if (x > 0) { console.log("El número es positivo") }
+  else if (x < 0) {
+    console.log("El número es negativo") }
+  else if (x == 0) {
+    console.log("El número es cero, ni negativo ni positivo") }
+} else {
+  console.log("No ha ingresado un número")
+}
+
+
+
+
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
