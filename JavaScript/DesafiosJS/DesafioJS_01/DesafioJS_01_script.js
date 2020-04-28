@@ -128,18 +128,17 @@
 // isNaN() – Stands for “is Not a Number”, if variable is not a number, it return true, else return false.
 // typeof – If variable is a number, it will returns a string named “number”.
 
-x = "Soy texto";
+// x = "Soy texto";
 
-if (typeof x == "number") {
-  if (x > 0) { console.log("El número es positivo") }
-  else if (x < 0) {
-    console.log("El número es negativo") }
-  else if (x == 0) {
-    console.log("El número es cero, ni negativo ni positivo") }
-} else {
-  console.log("No ha ingresado un número")
-}
-
+// if (typeof x == "number") {
+//   if (x > 0) { console.log("El número es positivo") }
+//   else if (x < 0) {
+//     console.log("El número es negativo") }
+//   else if (x == 0) {
+//     console.log("El número es cero, ni negativo ni positivo") }
+// } else {
+//   console.log("No ha ingresado un número")
+// }
 
 
 
@@ -252,6 +251,36 @@ if (typeof x == "number") {
 // }
 
 
+// V2 (Tucu *if)
+
+// let card = "Mastercard";
+
+// if (card != undefined || card != null) {
+//   if (card == "Visa") {
+
+//     console.log("9 cuotas sin interés");
+//     console.log("6 cuotas sin interés");
+//     console.log("3 cuotas sin interés");
+//     console.log("1 cuota sin interés");
+
+//   } else if (card == "Mastercard") {
+//     console.log("6 cuotas sin interés");
+//     console.log("3 cuotas sin interés");
+//     console.log("1 cuota sin interés");
+
+//   } else if (card == "Amex") {
+//     console.log("3 cuotas sin interés");
+//     console.log("1 cuota sin interés");
+
+//   } else {
+//     console.log("1 cuota sin interés");
+//   }
+// } else {
+//   alert("Che, pasame una tarjeta, no seas mala onda, porfa");
+// }
+
+
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // EJERCICIO   09 v1
@@ -259,12 +288,14 @@ if (typeof x == "number") {
 //
 // Imprimir en pantalla los numeros del 1 al 10 utilizando un bucle "while"
 
-// x = 0;
 
-// while (x < 10) {
-//   x ++;
+// x = 1;
+
+// while (x <= 10) {
 // console.log(x);
+// x ++;
 // }
+
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -274,12 +305,18 @@ if (typeof x == "number") {
 //
 // Imprimir los primeros 50 numeros pares: 2, 4, 6, 8, 10, etc. (/usando while)
 
+////// (Guido *while)
+
 // x = 0;
 
-// while (x <50) {
-//   x += 2;
+// while (x <= 50) {
 //   console.log(x);
+//   x += 2;
 // }
+
+////// (Clase *for)
+
+// for (let i = 0; i <= 50; i++) { if (i % 2 == 0) { console.log(i); } }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
