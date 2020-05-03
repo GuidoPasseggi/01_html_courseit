@@ -230,6 +230,8 @@
 // Amex – hasta 3 cuotas sin interés
 // Todas las demás - 1 cuota sin interés
 
+//// V1 (Guido)
+
 // const a = 9;
 // const b = 6;
 // const c = 3;
@@ -251,7 +253,7 @@
 // }
 
 
-// V2 (Tucu *if)
+//// V2 (Tucu *if)
 
 // let card = "Mastercard";
 
@@ -278,6 +280,66 @@
 // } else {
 //   alert("Che, pasame una tarjeta, no seas mala onda, porfa");
 // }
+
+//// V3 (Clase)
+
+// // 1. Crear un diccionario de tarjetas y sus posibles valores de cuotas.
+// const tarjetas = [{
+//   cardName: "Visa",
+//   installments: [1, 3, 6, 9, 12]
+// },
+// {
+//   cardName: "Mastercard",
+//   installments: [1, 3, 6]
+// },
+// {
+//   cardName: "Amex",
+//   installments: [1, 3]
+// },
+// {
+//   cardName: "Tucu",
+//   installments: [1, 3, 18]
+// },
+// {
+//   cardName: "Norteña",
+//   installments: [1]
+// }];
+
+
+// // 2. Recibir una tarjeta en particular
+// let card = "Visa";
+// console.log("La tarjeta a buscar es: " + card);
+
+
+// let selectedCard = undefined;
+
+// for (let i = 0; i < tarjetas.length; i++) {
+//   const currentCard = tarjetas[i];
+
+//   if (currentCard.cardName == card) {
+//     selectedCard = currentCard;
+//   }
+// }
+
+// if (selectedCard != undefined) {
+//   console.log("La tarjeta seleccionada es: ", selectedCard);
+
+//   for (let i = 0; i < selectedCard.installments.length; i++) {
+//     const installment = selectedCard.installments[i];
+
+//     if (installment == 1) {
+//       console.log(installment + " cuota sin interés.");
+//     } else {
+//       console.log(installment + " cuotas sin interés.");
+//     }
+
+//     // console.log( installment + (installment == 1 ? " cuota" : " cuotas") + " sin interés" );
+//   }
+// } else {
+//   console.log("La tarjeta "+card+" no forma parte del diccionario");
+//   console.log("1 cuota sin interés");
+// }
+
 
 
 
@@ -329,8 +391,25 @@
 // si el numero actual es multiplo de 3 y 5. Si ninguna regla se cumple imprimir el numero.
 // Ejemplo. 1 - 1 2 - 2 3 - Fizz 4 - 4 5 - Buzz 6 - Fizz 7 - 7 ... 15 - Fizzbuzz
 
-console.log("Me falta completar el ejercicio 09 v3 (ultimo de todos)");
+console.log("Me falta completar el ejercicio 09 v3 (ultimo de todos) hacerlo porque es importante en algunas entrevistas!!!");
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+
+////////// FUNCIONES
+
+// declarando la función
+function greet(name, weather) {
+  console.log("Qué onda, " + name);
+  console.log("Alto dia " + weather);
+}
+
+greet("Coty", "soleado");
+greet("Lu", "nublado");
+greet("Sebas", "copado");
+
+//// RETURN
+// la palabra clave RETURN siempre ponerla al final de la funcion
+// tambien podemos parar un bucle con RETURN
