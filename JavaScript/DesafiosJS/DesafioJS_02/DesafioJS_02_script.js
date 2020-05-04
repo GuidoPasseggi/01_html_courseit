@@ -64,7 +64,7 @@ function randomizador() {
 //// -- haciendo dos arrays
 //// -- lo negativo es que deben ambos arrays mantener el indexado
 
-//
+
 //
 // function educandoAlSoberano() {
 //   const palabras = ["setiembre", "almondiga", "dentrífico", "murciegalo", "alverja"];
