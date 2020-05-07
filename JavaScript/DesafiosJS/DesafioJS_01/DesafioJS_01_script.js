@@ -1,3 +1,9 @@
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+//// Clase 20-04-22 "JS / Condicionales y bucles
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+
 // EJERCICIO   01
 //
 //
@@ -380,36 +386,108 @@
 
 // for (let i = 0; i <= 50; i++) { if (i % 2 == 0) { console.log(i); } }
 
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// EJERCICIO   09 v3
-//
-//
-// Crear una funcion que reciba como parametro un numero entero. 
-// Esa funcion tiene que recorrer desde 0 hasta el numero recibido e imprimir en pantalla la palabra "Fizz"
-// si el numero actual es multiplo de 3, "Buzz" si el numero actual es multiplo de 5 o "Fizzbuzz"
-// si el numero actual es multiplo de 3 y 5. Si ninguna regla se cumple imprimir el numero.
+
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+//// Clase 20-05-06 "JS / Métodos, Strings y práctica"
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// EJERCICIO   1
+
+// Crear una funcion que reciba como parametro un numero entero.
+// Esa funcion tiene que recorrer desde 0 hasta el numero recibido
+// e imprimir en pantalla: 
+// "Fizz" si el numero actual es multiplo de 3
+// "Buzz" si el numero actual es multiplo de 5
+// "Fizzbuzz" si el numero actual es multiplo de 3 y 5.
+// Si ninguna regla se cumple imprimir el numero.
 // Ejemplo. 1 - 1 2 - 2 3 - Fizz 4 - 4 5 - Buzz 6 - Fizz 7 - 7 ... 15 - Fizzbuzz
 
-console.log("Me falta completar el ejercicio 09 v3 (ultimo de todos) hacerlo porque es importante en algunas entrevistas!!!");
+
+//// TIP sacar restos con % ("operador de modulo")
+//// 10 % 3 = 1 <-- Cuando da más que 0, significa que da "resto", por ende 10 no es multiplo de 3
+
+// function fizzbuzz(input) {
+//   for (i = 1; i <= input; i++) {
+//     if (i % 3 == 0 && i % 5 == 0) {
+//       console.log("Fizzbuzz")
+//     }
+//     else if (i % 3 == 0) {
+//       console.log("Fizz")
+//     }
+//     else if (i % 5 == 0) {
+//       console.log("Buzz")
+//     }
+//     else {
+//       console.log(i)
+//     }
+//   }
+// }
+
+// console.log("No te olvides que a las funciones hay que 'llamarlas' (ej. tippeando en consola: 'fizzbuzz(31);' s/comillas)");
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// EJERCICIO   2
 
+// "Mayor numero dentro de un array" 
+// Crear una funcion que devuelva el mayor numero dentro de un array
+// Ejemplo:
+// const arr = [3,5,1,10,23,13] // 23
 
-////////// FUNCIONES
+const arr = [3,5,1,10,23,13];
 
-// declarando la función
-function greet(name, weather) {
-  console.log("Qué onda, " + name);
-  console.log("Alto dia " + weather);
+function CalcularMayor (params) {
+ continuarrrescribiendooooooooOOOOOoooooooooooooo 
 }
 
-greet("Coty", "soleado");
-greet("Lu", "nublado");
-greet("Sebas", "copado");
 
-//// RETURN
-// la palabra clave RETURN siempre ponerla al final de la funcion
-// tambien podemos parar un bucle con RETURN
+
+////// NOT MINE                         1
+//// -- (SIN TESTEAR)
+//// -- OJO: list deberia estar integrado dentro de function
+
+// let list = [51,30,5,47,96,66];
+        
+// function exercise (num) {
+//  let maxNum = Math.max.apply(Math, num);
+//   console.log(maxNum);
+// }
+
+// exercise (num);
+
+//////  NOT MINE                        2
+//// -- (SIN TESTEAR)
+//// -- OJO: list deberia estar integrado dentro de function
+
+////// NOT MINE v2
+//// -- (SIN TESTEAR)
+//// -- WTF no lo entiendoooooooooo
+
+// function elMayor(arr) {
+
+//   let max = 0;
+
+//   arr.forEach(function (number) {
+//       if (number > max) {
+//           max = number
+//       }
+//   })
+
+//   console.log(max)
+// }
+
+//////  NOT MINE                        3
+//// -- (SIN TESTEAR)
+
+////Math.max.apply(null,"acá el array")
+
+//Math.max.apply(null, [51,30,5,47,96,66])
+
