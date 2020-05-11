@@ -442,28 +442,41 @@
 // Ejemplo:
 // const arr = [3,5,1,10,23,13] // 23
 
-const arr = [3,5,1,10,23,13];
+//////// Guido                            Guido
 
-function CalcularMayor (params) {
- continuarrrescribiendooooooooOOOOOoooooooooooooo 
-}
+// function CalcularMayor(lista) {
+//   // lista = ([80,90,800,60,7]);  
+//   // ^___  como ese array esta comentado,
+//   // hay que tippar el array al ingresar
+//   // la funcion en consola:
+//   // CalcularMayor([80,90,800,60,7]);
+//   lista.sort(function(a, b) {
+//   return b - a;
+// });
+//   console.log(lista[0]);
+// }
+
+// //// PARA .sort en orden ascendente (de menor a mayor):
+// // lista.sort(function(a, b) {
+// //   return a - b;
+// // });
 
 
 
-////// NOT MINE                         1
+////// NOT MINE                             1
 //// -- (SIN TESTEAR)
 //// -- OJO: list deberia estar integrado dentro de function
 
 // let list = [51,30,5,47,96,66];
-        
-// function exercise (num) {
-//  let maxNum = Math.max.apply(Math, num);
+
+// function Exercise (Num) {
+//  let maxNum = Math.max.apply(Math, Num);
 //   console.log(maxNum);
 // }
 
 // exercise (num);
 
-//////  NOT MINE                        2
+//////  NOT MINE                            2
 //// -- (SIN TESTEAR)
 //// -- OJO: list deberia estar integrado dentro de function
 
@@ -484,10 +497,246 @@ function CalcularMayor (params) {
 //   console.log(max)
 // }
 
-//////  NOT MINE                        3
+//////  NOT MINE                            3
 //// -- (SIN TESTEAR)
 
 ////Math.max.apply(null,"acá el array")
 
 //Math.max.apply(null, [51,30,5,47,96,66])
 
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// EJERCICIO   3
+
+//"Par de numeros mas grandes"
+// Crear una funcion que devuelva los dos numeros mas grandes dentro de un array
+// Ejemplo:
+// const arr = [3,5,1,10,23,13] // 23,13
+
+//////// Guido                            Guido
+
+// function CalcularMayores(lista) {
+//   lista = ([80,90,800,60,7]);  
+//   // ^___  como ese array esta comentado,
+//   // hay que tippar el array al ingresar
+//   // la funcion en consola:
+//   // CalcularMayor([80,90,800,60,7]);
+//   lista.sort(function(a, b) {
+//   return b - a;
+// });
+//   console.log(lista[0], lista[1]);
+// }
+
+// //// PARA .sort en orden ascendente (de menor a mayor):
+// // lista.sort(function(a, b) {
+// //   return a - b;
+// // });
+
+
+//////  NOT MINE                            1 
+//// -- (SIN TESTEAR)
+
+// function losDosMayores(arr) {
+
+//   let firstMax = 0;
+//   let secondMax = 0;
+
+//   arr.forEach(function (number) {
+//       if (number > firstMax)
+//           firstMax = number
+//   })
+
+//   console.log(firstMax)
+
+//   arr.forEach(function (number) {
+//       if (number > secondMax && number != firstMax)
+//           secondMax = number
+//   })
+//   console.log(secondMax)
+// }
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// EJERCICIO   4
+
+//"Encontrar duplicados en un array"
+// Crear una funcion que diga todos los elementos que aparecen mas de una vez en un array.
+// Ejemplo:
+// const arr = [1,2,3,2,3,4,1] // 2,3,1
+
+
+//////  NOT MINE (clase)                           1 
+//// -- (SIN TESTEAR, solo testeado en clase)
+
+const arr = [1, 5, 3, 5, 5, 5, 5, 1];
+
+function duplicados(arr) {
+  let duplicates = [];
+  for (let i = 0; i < arr.length; i++ {
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[i] == arr[j]) {
+        let noExiste = duplicates.indexOf(arr[i]) == -1;
+        //^__ con esa linea, comprueba cualquier valor que
+        // no encuentre en el array duplicated, va a dar "-1"
+        // por IndexOf. 
+        // Es como para evitar mostrar más valores
+        // identicos duplicados, si 5 se repite 4 veces.
+        // Recordar que IndexOf devuelve -1 si no encuentra
+        // un valor dentro del indice de un array
+        if (noExiste) {
+          duplicates.push(arr[i]);
+        }
+      }
+    }
+  }
+  console.log(duplicates);
+}
+
+
+//////  NOT MINE (Juani)                           1 
+//// -- (SIN TESTEAR, solo testeado en clase)
+//// -- Usó funciones de flecha "<="
+//// -- Desventajas!!! Muestra los valores duplicados
+//// -- pero 
+function duplicates(arr) {
+  const found = []
+  const duplicates = []
+
+  arr.map((num) => {
+    if (found.indexOf(num) > -1) {
+      duplicates.push(num)
+    } else {
+      found.push(num)
+    }
+  })
+
+  return duplicates
+}
+
+
+
+
+
+////// INTERNET no lo adapté ni lo testeé todavia               ???
+// let objList = [1,1,4,3,5,3,1,5,6,8,9,10,9];
+
+// let uniqueList = [];
+// let dupList = [];
+
+// Array.prototype.contains = function(item){
+//   let filtered_item = this.filter((i) => {
+//     return i.id === item.id
+//   });
+//   return !!filtered_item.length;
+// }
+
+// function contains(list, item){
+//   let filtered_item = list.filter((i) => {
+//     return i.id === item.id
+//   });
+//   return !!filtered_item.length;
+// }
+
+// function pushToUniqueList(item){
+//   if(!uniqueList.contains(item)) uniqueList.push(item);
+// }
+
+// function pushToDuplicateList(item){
+//   if(!dupList.contains(item)) dupList.push(item);
+// }
+
+// for(let i = 0; i < objList.length; i++){
+//   if(uniqueList.contains(objList[i])){
+//     pushToDuplicateList(objList[i]);
+//   } else {
+//     pushToUniqueList(objList[i]);
+//   }
+// }
+
+// console.log('Duplicate list is ', dupList);
+// console.log('Unique list is ', uniqueList);
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// EJERCICIO   5
+
+// Elementos no repetidos en un array.md
+// Crear una funcion que diga todos los elementos que aparecen
+// solo una vez en un array.
+// Ejemplo:
+// const arr = [1,2,3,2,3,4,1] // 4
+
+
+
+////// NOT MINE                             1
+//// -- "ele" corregido por el "tucu" en clase 20-05-10
+//// -- no lo testeamos 100% en casa
+
+function unicos(arr) {
+  let uniques = []; for (let i = 0; i < arr.length; i++) {
+    let esRepetido = false; for (let j = 0; j < arr.length; j++) {
+      if (arr[i] == arr[j] && i != j) {
+        esRepetido = true;
+      }
+    }
+    if (!esRepetido) {
+      uniques.push(arr[i])
+    }
+  } console.log(uniques);
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// EJERCICIO   6
+
+////// NOT MINE                             1
+//// -- "lu" explicado en clase 
+//// copiar y pegar el codigo aqui!!!
+
+// usan la funcion/propiedad ".split", y luego reverse
+// "Basicamente como yo lo entendi, con split haces
+// que el string sea un array de las letras (split puede hacer mas cosas btw)
+// con reverse das vuelta el array y con join lo volves a unir
+// para que sea string. Entonces te da la palabra al reves"
+
+function palindrome(str) {
+	let lowerCaseStr = str.toLowerCase();
+  	let checkPalindrome = lowerCaseStr.split("").reverse().join("");
+		
+	if(str === ""){
+		console.log("No ingresaste ninguna palabra")
+	} else if (lowerCaseStr == checkPalindrome) {
+		console.log("La palabra " + str.toLowerCase() + " es palindromo");
+	} else {
+		console.log("La palabra " + str.toLowerCase() + " no es palindromo"); 
+	} 
+}
+
+palindrome("SugUs")
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// EJERCICIO   7
+
+// "Inverso"
+// Crear una funcion que devuelva el string
+// que le enviamos pero invertido.
+// reverse('juani') // inauj
+
+////// NOT MINE                             1
+//// -- "lu" explicado en clase 
+//// copiar y pegar el codigo aqui de "ele"
+
+// ella lo hizo chequeando con ford la palabra a la inversa,
+// con "-1" para que no genere problemas con el indexado
+// (cada letra del string analizado)
+// y con "inverse = inverse + (word[i])" 
+// 
+// tucu tip con funcion de flecha:
+// const myReverse = (word) => word.split("").reverse().join("")
