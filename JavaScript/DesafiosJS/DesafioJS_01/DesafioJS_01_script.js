@@ -567,60 +567,85 @@
 // Ejemplo:
 // const arr = [1,2,3,2,3,4,1] // 2,3,1
 
+//////// Guido                            Guido/internet
+
+// const arr = [1, 1, 1, 2, 3, 3, 4, 5, 5, 6, 5, 7, 8, 7, 9, 9, 9, 9, 7, 7];
+
+// function CualesDuplicados(array) {
+//   let NumDuplicados = [];
+//   let NumUnicos = [];
+//   for (let i = 0; i < array.length; i++) {
+//     for (let j = i + 1; j < array.length; j++) {
+//       if (array[i] == array[j]) {
+//         let ChequeoRepetidos = NumDuplicados.indexOf(array[i]) == -1;
+//         if (ChequeoRepetidos) {
+//           NumDuplicados.push(array[i]);
+//         }
+//       }
+//     }
+//   }
+//   console.log("Los números duplicados son: " + NumDuplicados + ".");
+// }
+
+// console.log("No te olvides que para usar una funcion, hay que llamarla. Por ej.: CualesDuplicados(arr)");
+
+
+
 
 //////  NOT MINE (clase)                           1 
 //// -- (SIN TESTEAR, solo testeado en clase)
 
-const arr = [1, 5, 3, 5, 5, 5, 5, 1];
+// const arr = [1, 5, 3, 5, 5, 5, 5, 1];
 
-function duplicados(arr) {
-  let duplicates = [];
-  for (let i = 0; i < arr.length; i++ {
-    for (let j = i + 1; j < arr.length; j++) {
-      if (arr[i] == arr[j]) {
-        let noExiste = duplicates.indexOf(arr[i]) == -1;
-        //^__ con esa linea, comprueba cualquier valor que
-        // no encuentre en el array duplicated, va a dar "-1"
-        // por IndexOf. 
-        // Es como para evitar mostrar más valores
-        // identicos duplicados, si 5 se repite 4 veces.
-        // Recordar que IndexOf devuelve -1 si no encuentra
-        // un valor dentro del indice de un array
-        if (noExiste) {
-          duplicates.push(arr[i]);
-        }
-      }
-    }
-  }
-  console.log(duplicates);
-}
+// function duplicados(arr) {
+//   let duplicates = [];
+//   for (let i = 0; i < arr.length; i++ {
+//     for (let j = i + 1; j < arr.length; j++) {
+//       if (arr[i] == arr[j]) {
+//         let noExiste = duplicates.indexOf(arr[i]) == -1;
+//         //^__ con esa linea, comprueba cualquier valor que
+//         // no encuentre en el array duplicated, va a dar "-1"
+//         // por IndexOf. 
+//         // Es como para evitar mostrar más valores
+//         // identicos duplicados, si 5 se repite 4 veces.
+//         // Recordar que IndexOf devuelve -1 si no encuentra
+//         // un valor dentro del indice de un array
+//         if (noExiste) {
+//           duplicates.push(arr[i]);
+//         }
+//       }
+//     }
+//   }
+//   console.log(duplicates);
+// }
 
 
 //////  NOT MINE (Juani)                           1 
 //// -- (SIN TESTEAR, solo testeado en clase)
 //// -- Usó funciones de flecha "<="
 //// -- Desventajas!!! Muestra los valores duplicados
-//// -- pero 
-function duplicates(arr) {
-  const found = []
-  const duplicates = []
+//// -- pero si estan + de 2 veces, los repite al mostrarlos
 
-  arr.map((num) => {
-    if (found.indexOf(num) > -1) {
-      duplicates.push(num)
-    } else {
-      found.push(num)
-    }
-  })
+// function duplicates(arr) {
+//   const found = []
+//   const duplicates = []
 
-  return duplicates
-}
+//   arr.map((num) => {
+//     if (found.indexOf(num) > -1) {
+//       duplicates.push(num)
+//     } else {
+//       found.push(num)
+//     }
+//   })
 
-
-
+//   return duplicates
+// }
 
 
 ////// INTERNET no lo adapté ni lo testeé todavia               ???
+//// -- usa filtros
+//// -- no conozco "Array.prototype.contains"
+
 // let objList = [1,1,4,3,5,3,1,5,6,8,9,10,9];
 
 // let uniqueList = [];
@@ -664,7 +689,7 @@ function duplicates(arr) {
 
 // EJERCICIO   5
 
-// Elementos no repetidos en un array.md
+// "Elementos no repetidos en un array"
 // Crear una funcion que diga todos los elementos que aparecen
 // solo una vez en un array.
 // Ejemplo:
@@ -674,21 +699,25 @@ function duplicates(arr) {
 
 ////// NOT MINE                             1
 //// -- "ele" corregido por el "tucu" en clase 20-05-10
-//// -- no lo testeamos 100% en casa
+//// -- no lo testeamos 100% en clase
 
-function unicos(arr) {
-  let uniques = []; for (let i = 0; i < arr.length; i++) {
-    let esRepetido = false; for (let j = 0; j < arr.length; j++) {
-      if (arr[i] == arr[j] && i != j) {
+const arr = [1, 1, 1, 2, 3, 3, 4, 5, 5, 6, 5, 7, 8, 7, 9, 9, 9, 9, 7, 7];
+
+function Unicos(array) {
+  let Uniques = [];
+  for (let i = 0; i < array.length; i++) {
+    let esRepetido = false;
+    for (let j = 0; j < array.length; j++) {
+      if (array[i] == array[j] && i != j) {
         esRepetido = true;
       }
     }
     if (!esRepetido) {
-      uniques.push(arr[i])
+      Uniques.push(array[i])
     }
-  } console.log(uniques);
+  } console.log(Uniques);
 }
-
+////^___ con "&& i != j" 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -704,20 +733,20 @@ function unicos(arr) {
 // con reverse das vuelta el array y con join lo volves a unir
 // para que sea string. Entonces te da la palabra al reves"
 
-function palindrome(str) {
-	let lowerCaseStr = str.toLowerCase();
-  	let checkPalindrome = lowerCaseStr.split("").reverse().join("");
-		
-	if(str === ""){
-		console.log("No ingresaste ninguna palabra")
-	} else if (lowerCaseStr == checkPalindrome) {
-		console.log("La palabra " + str.toLowerCase() + " es palindromo");
-	} else {
-		console.log("La palabra " + str.toLowerCase() + " no es palindromo"); 
-	} 
-}
+// function palindrome(str) {
+// 	let lowerCaseStr = str.toLowerCase();
+//   	let checkPalindrome = lowerCaseStr.split("").reverse().join("");
 
-palindrome("SugUs")
+// 	if(str === ""){
+// 		console.log("No ingresaste ninguna palabra")
+// 	} else if (lowerCaseStr == checkPalindrome) {
+// 		console.log("La palabra " + str.toLowerCase() + " es palindromo");
+// 	} else {
+// 		console.log("La palabra " + str.toLowerCase() + " no es palindromo"); 
+// 	} 
+// }
+
+// palindrome("SugUs")
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
