@@ -20,7 +20,7 @@ const add_p = function () {
   }
   else {
     let li = document.createElement("li");
-    li.setAttribute("id", "element")
+    li.setAttribute("class", "element")
     li.appendChild(document.createTextNode(listInput.value));
     list.appendChild(li)
     // Resetear el value del input:
@@ -29,7 +29,7 @@ const add_p = function () {
 }
 
 const clean = () => {
-  document.querySelectorAll("#element").forEach(e => e.parentNode.removeChild(e));
+  document.querySelectorAll(".element").forEach(e => e.parentNode.removeChild(e));
 }
 
 const rm_last = () => {
