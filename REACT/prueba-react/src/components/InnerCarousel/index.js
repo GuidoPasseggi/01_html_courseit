@@ -12,6 +12,7 @@ class InnerCarousel extends React.Component {
   }
   
   render() {
+    // esta la declaramos solo para simplificar abajo con "items"
     const { items } = this.props
     return (
       <div>
