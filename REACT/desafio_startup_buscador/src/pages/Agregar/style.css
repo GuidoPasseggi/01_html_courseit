@@ -1,0 +1,30 @@
+.wrapper-agregar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-agregar {
+  margin: 15px 0 5px 0;
+}
+
+.input {
+  /* margin: -5px; */
+  padding: 5px;
+}
+
+.button {
+  margin: 20px;
+  padding: 5px;
+  width: 6rem;
+  font-weight: bold;
+}
+
+.nota {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: red;
+  text-align: center;
+  width: 400px;
+}

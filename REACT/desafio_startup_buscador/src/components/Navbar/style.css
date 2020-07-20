@@ -33,4 +33,5 @@ nav button {
   background-color: transparent;
   font-weight: bold;
   color: #fff;
+  cursor: pointer;
 }
