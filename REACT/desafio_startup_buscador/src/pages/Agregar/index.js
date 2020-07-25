@@ -41,6 +41,41 @@ class Agregar extends React.Component {
   // queremos validar los datos ingresados en los inputs
   handleClick() {
     const { name, email, logo, desc } = this.state;
+    const isValid = name && email && logo && desc ? true : false;
+
+    if (isValid) {
+      //ACA AGREGAMOS AL LOCALSTORAGE (leemos lo que hay y reemplazamos)
+      //paso 1
+      const oldStartups = localStorage.getItem("startups"); //si existe, tira null
+
+      if (oldStartups) {
+        const parsedOldStartups = JSON.parse(oldStartups);
+        parsedOldStartups.push({
+          name,
+          email,
+          logo,
+          desc
+        }); // <- paso 2 (arriba)
+        const newStartups = JSON.stringify(parsedOldStartups);
+        localStorage.setItem("startups", newStartups); //<- paso 3 (arriba)
+      } else {
+        const startups = [];
+        startups.push({
+          name,
+          email,
+          logo,
+          desc
+        });
+
+        const startupsToString = JSON.stringify(startups);
+        localStorage.setItem("startups", startupsToString);
+      }
+    }
+
+    this.setState({
+      estaOk: isValid,
+      showMessage: true
+    });
 
     //// VERSION RESUMIDA:
     // const isValid = name && email && logo && desc ? true : false;
@@ -48,23 +83,23 @@ class Agregar extends React.Component {
     // this.setState({
     //   estaOk: isValid,
     //   showMessage: true
-    // })
+    // });
 
-    // VERSION SIN RESUMIR:
-    // && es como "Y ESTO" pero tamb chequea existencia!
-    if (name && email && logo && desc) {
-      // console.log("todo esta OK");
-      this.setState({
-        estaOk: true,
-        showMassage: true //true aca y en else tamb
-      });
-    } else {
-      // console.log("Todo esta mal");
-      this.setState({
-        estaOk: false,
-        showMessage: true //true aca y en el if tamb
-      });
-    }
+    //// VERSION SIN RESUMIR:
+    //// && es como "Y ESTO" pero tamb chequea existencia!
+    // if (name && email && logo && desc) {
+    //   // console.log("todo esta OK");
+    //   this.setState({
+    //     estaOk: true,
+    //     showMassage: true //true aca y en else tamb
+    //   });
+    // } else {
+    //   // console.log("Todo esta mal");
+    //   this.setState({
+    //     estaOk: false,
+    //     showMessage: true //true aca y en el if tamb
+    //   });
+    // }
   }
 
   render() {

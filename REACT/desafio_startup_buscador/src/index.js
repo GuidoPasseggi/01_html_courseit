@@ -12,13 +12,17 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Agregar from "./pages/Agregar/index.js";
+import ProductPage from "./pages/ProductPage/index.js";
 
 ReactDOM.render(
   <Router>
     {/* ATENTI: poner "exact" como abajo
     para que la ruta sea exacta! */}
     <Route exact path="/" component={App} />
-    <Route exact path="/Agregar" component={Agregar} />
+    <Route exact path="/agregar" component={Agregar} />
+
+    {/*  Ruta dinamica: productos/idDeProducto ó Variable */}
+    <Route exact path="/productos/:productId" component={ProductPage} />
   </Router>,
   // ATENTI: a la coma de aca arriba!
   document.getElementById("root")

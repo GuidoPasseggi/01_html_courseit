@@ -18,11 +18,18 @@ class App extends React.Component {
     });
   }
 
+  componentDidMount() {
+    console.log(localStorage);
+  }
+
   render() {
     const { inputValue } = this.state;
     return (
       <>
-        <Nav getData={(inputValue) => this.handleData(inputValue)} />
+        <Nav
+          showAutoComplete={true}
+          getData={(inputValue) => this.handleData(inputValue)}
+        />
         <Cards filter={inputValue} />
         <Footer />
       </>
