@@ -1,0 +1,18 @@
+.checkout_wrapper {
+  display: flex;
+  flex-direction: column;
+  //   justify-content: center;
+  align-items: center;
+}
+
+// COUNTRY FIELD EXCLUSIVE:
+
+select:required:invalid {
+  color: gray;
+}
+option[value=""][disabled] {
+  display: none;
+}
+option {
+  color: black;
+}

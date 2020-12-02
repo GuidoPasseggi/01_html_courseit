@@ -26,6 +26,9 @@ class App extends React.Component {
     const { inputValue } = this.state;
     return (
       <>
+        {alert(
+          "product esta roto porque toma los datos de un JSON en vez del localStorage como en la ultima actualizacion del ejercicio (ver cards)"
+        )}
         <Nav
           showAutoComplete={true}
           getData={(inputValue) => this.handleData(inputValue)}

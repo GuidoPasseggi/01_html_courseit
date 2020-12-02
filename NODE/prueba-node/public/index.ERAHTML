@@ -1,0 +1,11 @@
+<html>
+  <head>
+    <title>Express</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+
+  <body>
+    <h1>Aca decia "Express" antes</h1>
+    <p>Es un h1 y un p en ./public/index.html</p>
+  </body>
+</html>
